@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaCorp HR Portal – Company Culture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">NexaCorp <em>HR</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="culture.html" class="active">Company Culture</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="benefits.html">Employee Benefits</a></li>
+      <li><a href="training.html">Training & Development</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header class="page-hero">
+    <h1>Our <span class="accent">Culture</span> & Values</h1>
+    <p>At NexaCorp, we believe that a strong culture is the foundation of exceptional performance. Here's what drives us every day.</p>
+  </header>
+
+  <!-- MISSION & VISION -->
+  <section class="container" style="padding: 5rem 2rem 2rem;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div style="background: var(--navy); color: white; border-radius: 16px; padding: 2.5rem;">
+        <div style="font-size:2rem; margin-bottom: 0.8rem;">🎯</div>
+        <h2 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--gold); margin-bottom: 1rem;">Our Mission</h2>
+        <p style="color: rgba(255,255,255,0.75); line-height: 1.8;">To empower every individual within NexaCorp to do their best work — through collaboration, innovation, and an unwavering commitment to human dignity and professional excellence.</p>
+      </div>
+      <div style="background: var(--gold); border-radius: 16px; padding: 2.5rem;">
+        <div style="font-size:2rem; margin-bottom: 0.8rem;">🌐</div>
+        <h2 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--navy); margin-bottom: 1rem;">Our Vision</h2>
+        <p style="color: var(--navy); opacity: 0.85; line-height: 1.8;">To be the most employee-centric global company — a place where talent flourishes, ideas thrive, and every person feels valued, heard, and inspired to grow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <section class="culture-values container">
+    <h2 class="section-title">Core Values</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="icon">🤝</div>
+        <h3>Integrity</h3>
+        <p>We act with honesty and transparency in every interaction, upholding the highest ethical standards.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">💡</div>
+        <h3>Innovation</h3>
+        <p>We encourage bold ideas and creative problem-solving to push boundaries and drive meaningful change.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🌍</div>
+        <h3>Inclusion</h3>
+        <p>We celebrate diversity and ensure every voice is respected, included, and empowered to contribute.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🚀</div>
+        <h3>Excellence</h3>
+        <p>We hold ourselves to the highest standards, continuously learning and striving to be our best.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🌱</div>
+        <h3>Growth</h3>
+        <p>We invest in the development of our people, fostering continuous personal and professional growth.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">💙</div>
+        <h3>Wellbeing</h3>
+        <p>We put the health, happiness, and mental wellness of our employees at the heart of everything we do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="culture-gallery container">
+    <h2 class="section-title">Life at NexaCorp</h2>
+    <div class="gallery-grid">
+      <img class="tall" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" alt="Modern office space" />
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80" alt="Team building activity" />
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&q=80" alt="Team celebration" />
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80" alt="Collaborative workshop" />
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&q=80" alt="Tech innovation lab" />
+    </div>
+  </section>
+
+  <!-- EMBEDDED VIDEO -->
+  <section class="culture-video container">
+    <h2 class="section-title">Hear From Our Team</h2>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/watch?v=D89Dgg32yLk&list=PLU9il4c3BBUXS1IsXq8FXx-UQFb22Kge5"
+        title="Company Culture Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p style="text-align:center; color: var(--grey-text); margin-top:1rem; font-size:0.9rem;">🎬 Watch our team members share what makes working at NexaCorp special</p>
+  </section>
+
+  <!-- HR POLICIES INTERNAL LINKS -->
+  <section class="container" style="padding: 0 2rem 6rem;">
+    <div class="policy-links">
+      <h3>HR Policies & Guidelines</h3>
+      <p style="color: var(--grey-text); margin-bottom: 1.5rem;">Access our internal policy documents to stay informed and compliant.</p>
+      <div class="policy-list">
+        <a href="benefits.html">📋 Employee Benefits Policy</a>
+        <a href="training.html">📚 Learning & Development Policy</a>
+        <a href="careers.html">📄 Internal Recruitment Policy</a>
+        <a href="#code-of-conduct">⚖️ Code of Conduct</a>
+        <a href="#remote-work">🏠 Remote Work Policy</a>
+        <a href="#anti-harassment">🛡️ Anti-Harassment Policy</a>
+        <a href="#leave-policy">🌴 Leave & Absence Policy</a>
+        <a href="#data-privacy">🔒 Data Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">NexaCorp <em>HR</em></span>
+        <p>Empowering people. Building futures.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="culture.html">Company Culture</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="training.html">Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact HR</h5>
+        <p>📧 hr@nexacorp.com</p>
+        <p>📞 +1 (800) 639-2267</p>
+        <p>🏢 100 Corporate Ave, NY 10001</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NexaCorp. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Employee Handbook</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

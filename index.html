@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaCorp HR Portal – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">NexaCorp <em>HR</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="culture.html">Company Culture</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="benefits.html">Employee Benefits</a></li>
+      <li><a href="training.html">Training & Development</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to the NexaCorp</p>
+      <h1 class="hero-title">Human Resources<br><span class="accent">Employee Portal</span></h1>
+      <p class="hero-sub">Your central hub for everything that matters — careers, benefits, culture, and growth. Built for our people, by our people.</p>
+      <div class="hero-btns">
+        <a href="careers.html" class="btn btn-primary">View Open Roles</a>
+        <a href="benefits.html" class="btn btn-outline">My Benefits</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/culture.jpg" alt="Team collaborating in office" />
+    </div>
+  </header>
+
+  <!-- QUICK LINKS -->
+  <section class="quick-links container">
+    <h2 class="section-title">What Are You Looking For?</h2>
+    <div class="cards-grid">
+      <a href="culture.html" class="card">
+        <div class="card-icon">🏛️</div>
+        <h3>Company Culture</h3>
+        <p>Discover our values, mission, and what makes NexaCorp a great place to work.</p>
+        <span class="card-link">Explore →</span>
+      </a>
+      <a href="careers.html" class="card">
+        <div class="card-icon">💼</div>
+        <h3>Careers & Vacancies</h3>
+        <p>Browse open positions and apply internally for your next opportunity.</p>
+        <span class="card-link">View Jobs →</span>
+      </a>
+      <a href="benefits.html" class="card">
+        <div class="card-icon">🌟</div>
+        <h3>Employee Benefits</h3>
+        <p>Health, wellness, retirement, and perks designed to support your life.</p>
+        <span class="card-link">Learn More →</span>
+      </a>
+      <a href="training.html" class="card">
+        <div class="card-icon">📚</div>
+        <h3>Training & Development</h3>
+        <p>Courses, workshops, and programs to help you grow professionally.</p>
+        <span class="card-link">Start Learning →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat"><span class="stat-num">3,200+</span><span class="stat-label">Employees Worldwide</span></div>
+      <div class="stat"><span class="stat-num">18</span><span class="stat-label">Countries</span></div>
+      <div class="stat"><span class="stat-num">94%</span><span class="stat-label">Employee Satisfaction</span></div>
+      <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Years of Excellence</span></div>
+    </div>
+  </section>
+
+  <!-- ANNOUNCEMENTS -->
+  <section class="announcements container">
+    <h2 class="section-title">Company Announcements</h2>
+    <ul class="announce-list">
+      <li>
+        <span class="tag">Policy Update</span>
+        <div>
+          <strong>Updated Remote Work Policy — Effective April 2026</strong>
+          <p>Employees may work remotely up to 3 days per week. <a href="#">Read the full policy →</a></p>
+        </div>
+      </li>
+      <li>
+        <span class="tag">Event</span>
+        <div>
+          <strong>Annual Town Hall — March 28, 2026</strong>
+          <p>Join the CEO for the Q1 all-hands meeting. <a href="#">Register here →</a></p>
+        </div>
+      </li>
+      <li>
+        <span class="tag">Benefits</span>
+        <div>
+          <strong>Open Enrollment Period Now Open</strong>
+          <p>Update your health and benefits selections before March 31. <a href="benefits.html">Go to Benefits →</a></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- STAFF IMAGES -->
+  <section class="team-section container">
+    <h2 class="section-title">Meet Some of Our Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/hero-team.jpg" alt="Sarah Johnson – Head of HR" />
+        <h4>Sarah Johnson</h4>
+        <p>Head of Human Resources</p>
+      </div>
+      <div class="team-card">
+        <img src="images/staff-marcus.jpg" alt="Marcus Lee – Talent Acquisition" />
+        <h4>Marcus Lee</h4>
+        <p>Talent Acquisition Manager</p>
+      </div>
+      <div class="team-card">
+        <img src="images/staff-amara.jpeg" alt="Amara Osei – L&D Specialist" />
+        <h4>Amara Osei</h4>
+        <p>Learning & Development Specialist</p>
+      </div>
+      <div class="team-card">
+        <img src="images/staff-sarah" alt="David Chen – Benefits Coordinator" />
+        <h4>David Chen</h4>
+        <p>Benefits Coordinator</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">NexaCorp <em>HR</em></span>
+        <p>Empowering people. Building futures.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="culture.html">Company Culture</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="training.html">Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact HR</h5>
+        <p>📧 hr@nexacorp.com</p>
+        <p>📞 +1 (800) 639-2267</p>
+        <p>🏢 100 Corporate Ave, NY 10001</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NexaCorp. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Employee Handbook</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

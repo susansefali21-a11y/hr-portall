@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaCorp HR Portal – Employee Benefits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">NexaCorp <em>HR</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="culture.html">Company Culture</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="benefits.html" class="active">Employee Benefits</a></li>
+      <li><a href="training.html">Training & Development</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header class="page-hero">
+    <h1>Employee <span class="accent">Benefits</span></h1>
+    <p>We invest in the whole person — your health, your finances, your family, and your future.</p>
+  </header>
+
+  <section class="benefits-section container">
+
+    <h2 class="section-title">Your Comprehensive Benefits Package</h2>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card">
+        <div class="icon">🏥</div>
+        <h3>Health & Medical</h3>
+        <p>Comprehensive medical coverage for you and your family, including dental and vision.</p>
+        <ul>
+          <li>100% employer-paid medical premium</li>
+          <li>Dental & orthodontics coverage</li>
+          <li>Vision care — glasses & contacts</li>
+          <li>Mental health support & therapy</li>
+          <li>Telehealth access 24/7</li>
+        </ul>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">💰</div>
+        <h3>Retirement & Savings</h3>
+        <p>Plan for your financial future with our competitive retirement and savings programs.</p>
+        <ul>
+          <li>401(k) with 6% employer match</li>
+          <li>Employee stock purchase plan</li>
+          <li>Annual performance bonus</li>
+          <li>Financial wellness counseling</li>
+          <li>Life insurance coverage</li>
+        </ul>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">🌴</div>
+        <h3>Time Off & Leave</h3>
+        <p>Rest, recharge, and be present for what matters most with our generous leave policies.</p>
+        <ul>
+          <li>25 days paid annual leave</li>
+          <li>16 weeks paid parental leave</li>
+          <li>Sick leave — unlimited</li>
+          <li>Compassionate bereavement leave</li>
+          <li>Public holidays + 3 personal days</li>
+        </ul>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">🧘</div>
+        <h3>Wellness & Lifestyle</h3>
+        <p>We support your physical and mental wellbeing with perks that make a real difference.</p>
+        <ul>
+          <li>$150/month wellness stipend</li>
+          <li>Free gym membership</li>
+          <li>Employee Assistance Programme (EAP)</li>
+          <li>Mindfulness & meditation app access</li>
+          <li>Annual health & wellness day</li>
+        </ul>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">🏡</div>
+        <h3>Flexible Working</h3>
+        <p>Work in a way that suits your life, with flexible arrangements across all levels.</p>
+        <ul>
+          <li>Hybrid work (up to 3 days remote)</li>
+          <li>Flexible start/end hours</li>
+          <li>$800 home office stipend</li>
+          <li>Laptop & equipment provided</li>
+          <li>Co-working space allowance</li>
+        </ul>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">🎓</div>
+        <h3>Education & Growth</h3>
+        <p>We fund your learning and development as an investment in your future and ours.</p>
+        <ul>
+          <li>$3,000/year tuition reimbursement</li>
+          <li>Access to 1,000+ online courses</li>
+          <li>Conference attendance sponsorship</li>
+          <li>Professional certifications covered</li>
+          <li>Mentorship matching program</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- ENROLLMENT CALLOUT -->
+    <div style="background: linear-gradient(135deg, var(--navy), var(--navy-mid)); border-radius: 16px; padding: 3rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items:center; margin-bottom: 4rem;">
+      <div>
+        <h2 style="font-family:var(--font-display); color:var(--gold); font-size:1.8rem; margin-bottom:0.6rem;">Open Enrollment — Now Open</h2>
+        <p style="color:rgba(255,255,255,0.72); max-width: 520px;">The 2026 benefits open enrollment period runs from <strong style="color:white;">March 1 – March 31, 2026</strong>. Review and update your selections before the deadline to ensure uninterrupted coverage.</p>
+      </div>
+      <a href="mailto:benefits@nexacorp.com" class="btn btn-primary" style="white-space:nowrap;">Enroll Now</a>
+    </div>
+
+    <!-- BENEFITS COMPARISON TABLE -->
+    <h2 class="section-title">Benefits by Employment Level</h2>
+    <div style="overflow-x: auto; margin-bottom: 4rem;">
+      <table style="width:100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);">
+        <thead>
+          <tr style="background: var(--navy);">
+            <th style="padding: 1rem 1.4rem; text-align:left; color: var(--gold); font-family: var(--font-display);">Benefit</th>
+            <th style="padding: 1rem 1.4rem; text-align:center; color: rgba(255,255,255,0.8);">Associate</th>
+            <th style="padding: 1rem 1.4rem; text-align:center; color: rgba(255,255,255,0.8);">Senior</th>
+            <th style="padding: 1rem 1.4rem; text-align:center; color: rgba(255,255,255,0.8);">Manager</th>
+            <th style="padding: 1rem 1.4rem; text-align:center; color: rgba(255,255,255,0.8);">Director+</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--grey-mid);">
+            <td style="padding:1rem 1.4rem; font-weight:500; color:var(--navy);">Health Insurance</td>
+            <td style="text-align:center; padding:1rem;">✅</td>
+            <td style="text-align:center; padding:1rem;">✅</td>
+            <td style="text-align:center; padding:1rem;">✅</td>
+            <td style="text-align:center; padding:1rem;">✅ + Family</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--grey-mid); background: var(--grey-light);">
+            <td style="padding:1rem 1.4rem; font-weight:500; color:var(--navy);">Annual Leave</td>
+            <td style="text-align:center; padding:1rem;">20 days</td>
+            <td style="text-align:center; padding:1rem;">22 days</td>
+            <td style="text-align:center; padding:1rem;">25 days</td>
+            <td style="text-align:center; padding:1rem;">Unlimited</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--grey-mid);">
+            <td style="padding:1rem 1.4rem; font-weight:500; color:var(--navy);">401(k) Match</td>
+            <td style="text-align:center; padding:1rem;">3%</td>
+            <td style="text-align:center; padding:1rem;">4%</td>
+            <td style="text-align:center; padding:1rem;">6%</td>
+            <td style="text-align:center; padding:1rem;">6% + Stock</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--grey-mid); background: var(--grey-light);">
+            <td style="padding:1rem 1.4rem; font-weight:500; color:var(--navy);">Learning Budget</td>
+            <td style="text-align:center; padding:1rem;">$1,000</td>
+            <td style="text-align:center; padding:1rem;">$2,000</td>
+            <td style="text-align:center; padding:1rem;">$3,000</td>
+            <td style="text-align:center; padding:1rem;">$5,000</td>
+          </tr>
+          <tr>
+            <td style="padding:1rem 1.4rem; font-weight:500; color:var(--navy);">Executive Coaching</td>
+            <td style="text-align:center; padding:1rem;">—</td>
+            <td style="text-align:center; padding:1rem;">—</td>
+            <td style="text-align:center; padding:1rem;">✅</td>
+            <td style="text-align:center; padding:1rem;">✅</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- POLICY LINKS -->
+    <div class="policy-links">
+      <h3>Related Policies</h3>
+      <div class="policy-list">
+        <a href="#">📄 Full Benefits Guide 2026</a>
+        <a href="#">🌴 Leave & Absence Policy</a>
+        <a href="#">🏥 Health Insurance Summary</a>
+        <a href="#">💰 Retirement Plan Document</a>
+        <a href="#">🤝 Flexible Work Agreement</a>
+        <a href="#">📞 EAP Contact Information</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">NexaCorp <em>HR</em></span>
+        <p>Empowering people. Building futures.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="culture.html">Company Culture</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="training.html">Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact HR</h5>
+        <p>📧 hr@nexacorp.com</p>
+        <p>📞 +1 (800) 639-2267</p>
+        <p>🏢 100 Corporate Ave, NY 10001</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NexaCorp. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Employee Handbook</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

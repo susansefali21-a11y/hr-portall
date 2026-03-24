@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaCorp HR Portal – Training & Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">NexaCorp <em>HR</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="culture.html">Company Culture</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="benefits.html">Employee Benefits</a></li>
+      <li><a href="training.html" class="active">Training & Development</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header class="page-hero">
+    <h1>Training & <span class="accent">Development</span></h1>
+    <p>Invest in yourself. NexaCorp provides world-class learning resources to help every employee grow, lead, and succeed.</p>
+  </header>
+
+  <section class="training-section container">
+
+    <!-- EMBEDDED HR TRAINING VIDEO -->
+    <h2 class="section-title">Featured Training: Leadership Essentials</h2>
+    <div class="video-wrapper" style="max-width: 860px; margin: 0 auto 3rem; border-radius: 16px; overflow:hidden; box-shadow: var(--shadow-lg); aspect-ratio: 16/9;">
+      <iframe
+        src="https://www.youtube.com/embed/mEjgHJkAm18"
+        title="Leadership & Management Training"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="width:100%; height:100%; border:none;">
+      </iframe>
+    </div>
+    <p style="text-align:center; color:var(--grey-text); margin-bottom:4rem; font-size:0.9rem;">🎓 Part of our NexaLearn Leadership Series — available to all employees</p>
+
+    <!-- LEARNING PROGRAMS -->
+    <h2 class="section-title">Our Learning Programs</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem; margin-bottom: 4rem;">
+      <div style="background:var(--navy); border-radius:var(--radius); padding:2rem; color:white;">
+        <div style="font-size:2rem; margin-bottom:0.8rem;">🎯</div>
+        <h3 style="font-family:var(--font-display); color:var(--gold); margin-bottom:0.6rem;">NexaLearn Academy</h3>
+        <p style="color:rgba(255,255,255,0.72); font-size:0.92rem;">Our internal online learning platform with 1,000+ courses on leadership, technical skills, compliance, and soft skills.</p>
+      </div>
+      <div style="background:var(--gold); border-radius:var(--radius); padding:2rem;">
+        <div style="font-size:2rem; margin-bottom:0.8rem;">🧑‍🏫</div>
+        <h3 style="font-family:var(--font-display); color:var(--navy); margin-bottom:0.6rem;">Mentorship Program</h3>
+        <p style="color:var(--navy); opacity:0.8; font-size:0.92rem;">Be paired with a senior leader for 6-month structured mentorship. Over 400 active mentor-mentee pairs globally.</p>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius); padding:2rem; box-shadow:var(--shadow); border:1px solid var(--grey-mid);">
+        <div style="font-size:2rem; margin-bottom:0.8rem;">🌍</div>
+        <h3 style="font-family:var(--font-display); color:var(--navy); margin-bottom:0.6rem;">Global Exchange</h3>
+        <p style="color:var(--grey-text); font-size:0.92rem;">3–6 month secondments to one of our international offices. Gain cross-cultural experience and expand your network.</p>
+      </div>
+    </div>
+
+    <!-- AVAILABLE COURSES -->
+    <h2 class="section-title">Available Courses</h2>
+    <div class="courses-grid">
+
+      <div class="course-card">
+        <div class="course-thumb">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&q=80" alt="Leadership course" />
+        </div>
+        <div class="course-body">
+          <div class="course-level">Intermediate</div>
+          <h3>Leadership & People Management</h3>
+          <p>Build the skills to lead high-performing teams with confidence and empathy.</p>
+          <div class="course-meta">
+            <span>⏱ 8 hours</span>
+            <a href="#" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.82rem;">Enrol</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-thumb">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80" alt="Data analytics course" />
+        </div>
+        <div class="course-body">
+          <div class="course-level">Beginner</div>
+          <h3>Data Literacy for Non-Technical Professionals</h3>
+          <p>Learn to interpret data, build dashboards, and make evidence-based decisions.</p>
+          <div class="course-meta">
+            <span>⏱ 6 hours</span>
+            <a href="#" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.82rem;">Enrol</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-thumb">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&q=80" alt="Communication skills" />
+        </div>
+        <div class="course-body">
+          <div class="course-level">All Levels</div>
+          <h3>Effective Business Communication</h3>
+          <p>Master written and verbal communication for presentations, emails, and meetings.</p>
+          <div class="course-meta">
+            <span>⏱ 4 hours</span>
+            <a href="#" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.82rem;">Enrol</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-thumb">
+          <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=400&q=80" alt="Project management" />
+        </div>
+        <div class="course-body">
+          <div class="course-level">Advanced</div>
+          <h3>Project Management Fundamentals (PMP Prep)</h3>
+          <p>Prepare for PMP certification with hands-on project management frameworks.</p>
+          <div class="course-meta">
+            <span>⏱ 16 hours</span>
+            <a href="#" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.82rem;">Enrol</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-thumb">
+          <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=400&q=80" alt="DEI training" />
+        </div>
+        <div class="course-body">
+          <div class="course-level">Mandatory</div>
+          <h3>Diversity, Equity & Inclusion in the Workplace</h3>
+          <p>Required training for all NexaCorp employees on creating an inclusive environment.</p>
+          <div class="course-meta">
+            <span>⏱ 3 hours</span>
+            <a href="#" class="btn btn-navy" style="padding:0.4rem 1rem; font-size:0.82rem;">Start</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-thumb">
+          <img src="https://images.unsplash.com/photo-1616587226157-48e49175ee20?w=400&q=80" alt="Wellbeing course" />
+        </div>
+        <div class="course-body">
+          <div class="course-level">All Levels</div>
+          <h3>Workplace Wellbeing & Stress Management</h3>
+          <p>Practical strategies to maintain mental health, set boundaries, and avoid burnout.</p>
+          <div class="course-meta">
+            <span>⏱ 2 hours</span>
+            <a href="#" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.82rem;">Enrol</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DEVELOPMENT FRAMEWORK -->
+    <h2 class="section-title">Career Development Framework</h2>
+    <div style="background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; margin-bottom: 4rem;">
+      <div style="background: var(--navy); padding: 1.2rem 2rem;">
+        <p style="color: var(--gold); font-weight:600; font-size:0.9rem; letter-spacing:0.08em;">NEXACORP GROWTH PATHWAY</p>
+      </div>
+      <div style="padding: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; text-align:center;">
+        <div style="padding:1.2rem; border-radius:10px; background: var(--grey-light);">
+          <div style="font-size:1.6rem; margin-bottom:0.4rem;">🌱</div>
+          <strong style="color:var(--navy); font-size:0.9rem;">Associate</strong>
+          <p style="color:var(--grey-text); font-size:0.78rem; margin-top:0.3rem;">Years 0–2</p>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:1.3rem;">→</div>
+        <div style="padding:1.2rem; border-radius:10px; background: var(--grey-light);">
+          <div style="font-size:1.6rem; margin-bottom:0.4rem;">🏃</div>
+          <strong style="color:var(--navy); font-size:0.9rem;">Professional</strong>
+          <p style="color:var(--grey-text); font-size:0.78rem; margin-top:0.3rem;">Years 2–5</p>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:1.3rem;">→</div>
+        <div style="padding:1.2rem; border-radius:10px; background: var(--grey-light);">
+          <div style="font-size:1.6rem; margin-bottom:0.4rem;">⭐</div>
+          <strong style="color:var(--navy); font-size:0.9rem;">Senior</strong>
+          <p style="color:var(--grey-text); font-size:0.78rem; margin-top:0.3rem;">Years 5–8</p>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:1.3rem;">→</div>
+        <div style="padding:1.2rem; border-radius:10px; background: var(--navy);">
+          <div style="font-size:1.6rem; margin-bottom:0.4rem;">👑</div>
+          <strong style="color:var(--gold); font-size:0.9rem;">Manager/Director</strong>
+          <p style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:0.3rem;">Years 8+</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- POLICY LINKS -->
+    <div class="policy-links">
+      <h3>Training Policies & Resources</h3>
+      <div class="policy-list">
+        <a href="#">📖 Learning & Development Policy</a>
+        <a href="#">💳 Tuition Reimbursement Form</a>
+        <a href="#">🎯 Individual Development Plan Template</a>
+        <a href="#">🤝 Mentorship Program Guide</a>
+        <a href="#">🌍 Global Exchange Application</a>
+        <a href="#">📜 Certification Sponsorship Policy</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">NexaCorp <em>HR</em></span>
+        <p>Empowering people. Building futures.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="culture.html">Company Culture</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="training.html">Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact HR</h5>
+        <p>📧 hr@nexacorp.com</p>
+        <p>📞 +1 (800) 639-2267</p>
+        <p>🏢 100 Corporate Ave, NY 10001</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NexaCorp. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Employee Handbook</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

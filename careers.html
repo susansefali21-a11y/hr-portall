@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaCorp HR Portal – Careers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">NexaCorp <em>HR</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="culture.html">Company Culture</a></li>
+      <li><a href="careers.html" class="active">Careers</a></li>
+      <li><a href="benefits.html">Employee Benefits</a></li>
+      <li><a href="training.html">Training & Development</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header class="page-hero">
+    <h1>Careers & <span class="accent">Opportunities</span></h1>
+    <p>Join a team of 3,200+ innovators. Explore internal and external openings and take your next career step with NexaCorp.</p>
+  </header>
+
+  <section class="careers-section container">
+
+    <!-- WHY JOIN US -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem; align-items: center;">
+      <div>
+        <h2 class="section-title">Why Work Here?</h2>
+        <ul style="display: flex; flex-direction: column; gap: 0.9rem;">
+          <li style="display:flex; gap:0.8rem; align-items:flex-start;">
+            <span style="color:var(--gold); font-size:1.2rem;">✓</span>
+            <div><strong style="color:var(--navy);">Competitive Compensation</strong><br><span style="color:var(--grey-text);font-size:0.92rem;">Market-leading salaries, annual bonuses, and equity options for senior roles.</span></div>
+          </li>
+          <li style="display:flex; gap:0.8rem; align-items:flex-start;">
+            <span style="color:var(--gold); font-size:1.2rem;">✓</span>
+            <div><strong style="color:var(--navy);">Flexible Working</strong><br><span style="color:var(--grey-text);font-size:0.92rem;">Hybrid and fully remote options across most departments.</span></div>
+          </li>
+          <li style="display:flex; gap:0.8rem; align-items:flex-start;">
+            <span style="color:var(--gold); font-size:1.2rem;">✓</span>
+            <div><strong style="color:var(--navy);">Career Growth</strong><br><span style="color:var(--grey-text);font-size:0.92rem;">Structured development plans, mentorship, and fast-track programs.</span></div>
+          </li>
+          <li style="display:flex; gap:0.8rem; align-items:flex-start;">
+            <span style="color:var(--gold); font-size:1.2rem;">✓</span>
+            <div><strong style="color:var(--navy);">Global Exposure</strong><br><span style="color:var(--grey-text);font-size:0.92rem;">Opportunities to work across our 18 international offices.</span></div>
+          </li>
+        </ul>
+      </div>
+      <div style="border-radius:16px; overflow:hidden; height: 340px; box-shadow: var(--shadow-lg);">
+        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80" alt="Team in a meeting" style="height:100%; object-fit:cover;" />
+      </div>
+    </div>
+
+    <!-- RECRUITMENT PROCESS -->
+    <h2 class="section-title">Our Hiring Process</h2>
+    <div style="display: flex; gap: 0; margin-bottom: 4rem; flex-wrap: wrap;">
+      <div style="flex:1; min-width:150px; text-align:center; padding: 1.5rem 1rem;">
+        <div style="width:52px; height:52px; background:var(--navy); color:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; margin: 0 auto 1rem; font-family:var(--font-display); font-size:1.3rem;">1</div>
+        <h4 style="color:var(--navy); font-family:var(--font-display); margin-bottom:0.4rem;">Apply Online</h4>
+        <p style="color:var(--grey-text); font-size:0.85rem;">Submit your application via the job listing below.</p>
+      </div>
+      <div style="flex:0; display:flex; align-items:center; padding-bottom:2rem;"><span style="color:var(--gold); font-size:1.5rem;">→</span></div>
+      <div style="flex:1; min-width:150px; text-align:center; padding: 1.5rem 1rem;">
+        <div style="width:52px; height:52px; background:var(--navy); color:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; margin: 0 auto 1rem; font-family:var(--font-display); font-size:1.3rem;">2</div>
+        <h4 style="color:var(--navy); font-family:var(--font-display); margin-bottom:0.4rem;">Initial Screen</h4>
+        <p style="color:var(--grey-text); font-size:0.85rem;">HR reviews your profile and arranges a screening call.</p>
+      </div>
+      <div style="flex:0; display:flex; align-items:center; padding-bottom:2rem;"><span style="color:var(--gold); font-size:1.5rem;">→</span></div>
+      <div style="flex:1; min-width:150px; text-align:center; padding: 1.5rem 1rem;">
+        <div style="width:52px; height:52px; background:var(--navy); color:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; margin: 0 auto 1rem; font-family:var(--font-display); font-size:1.3rem;">3</div>
+        <h4 style="color:var(--navy); font-family:var(--font-display); margin-bottom:0.4rem;">Interviews</h4>
+        <p style="color:var(--grey-text); font-size:0.85rem;">1–2 rounds with the hiring manager and team.</p>
+      </div>
+      <div style="flex:0; display:flex; align-items:center; padding-bottom:2rem;"><span style="color:var(--gold); font-size:1.5rem;">→</span></div>
+      <div style="flex:1; min-width:150px; text-align:center; padding: 1.5rem 1rem;">
+        <div style="width:52px; height:52px; background:var(--gold); color:var(--navy); border-radius:50%; display:flex; align-items:center; justify-content:center; margin: 0 auto 1rem; font-family:var(--font-display); font-size:1.3rem;">4</div>
+        <h4 style="color:var(--navy); font-family:var(--font-display); margin-bottom:0.4rem;">Offer & Onboard</h4>
+        <p style="color:var(--grey-text); font-size:0.85rem;">Receive your offer and join the NexaCorp family!</p>
+      </div>
+    </div>
+
+    <!-- JOB VACANCIES LIST -->
+    <h2 class="section-title">Current Job Vacancies</h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterJobs('all', this)">All Departments</button>
+      <button class="filter-btn" onclick="filterJobs('hr', this)">Human Resources</button>
+      <button class="filter-btn" onclick="filterJobs('tech', this)">Technology</button>
+      <button class="filter-btn" onclick="filterJobs('finance', this)">Finance</button>
+      <button class="filter-btn" onclick="filterJobs('marketing', this)">Marketing</button>
+      <button class="filter-btn" onclick="filterJobs('ops', this)">Operations</button>
+    </div>
+
+    <div class="jobs-list" id="jobsList">
+
+      <div class="job-card" data-dept="hr">
+        <div class="job-info">
+          <h3>HR Business Partner</h3>
+          <div class="job-meta">
+            <span class="job-tag">Human Resources</span>
+            <span class="job-tag">Full-Time</span>
+            <span class="job-tag">New York, USA</span>
+            <span class="job-tag hot">🔥 Urgent</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+      <div class="job-card" data-dept="tech">
+        <div class="job-info">
+          <h3>Senior Software Engineer – HR Systems</h3>
+          <div class="job-meta">
+            <span class="job-tag">Technology</span>
+            <span class="job-tag">Full-Time</span>
+            <span class="job-tag">Remote</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+      <div class="job-card" data-dept="finance">
+        <div class="job-info">
+          <h3>Payroll Analyst</h3>
+          <div class="job-meta">
+            <span class="job-tag">Finance</span>
+            <span class="job-tag">Full-Time</span>
+            <span class="job-tag">London, UK</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+      <div class="job-card" data-dept="hr">
+        <div class="job-info">
+          <h3>Talent Acquisition Specialist</h3>
+          <div class="job-meta">
+            <span class="job-tag">Human Resources</span>
+            <span class="job-tag">Contract</span>
+            <span class="job-tag">Hybrid</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+      <div class="job-card" data-dept="marketing">
+        <div class="job-info">
+          <h3>Employer Brand Manager</h3>
+          <div class="job-meta">
+            <span class="job-tag">Marketing</span>
+            <span class="job-tag">Full-Time</span>
+            <span class="job-tag">Singapore</span>
+            <span class="job-tag hot">🔥 Urgent</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+      <div class="job-card" data-dept="ops">
+        <div class="job-info">
+          <h3>Workplace Experience Coordinator</h3>
+          <div class="job-meta">
+            <span class="job-tag">Operations</span>
+            <span class="job-tag">Full-Time</span>
+            <span class="job-tag">Dubai, UAE</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+      <div class="job-card" data-dept="tech">
+        <div class="job-info">
+          <h3>Data Analyst – People Analytics</h3>
+          <div class="job-meta">
+            <span class="job-tag">Technology</span>
+            <span class="job-tag">Full-Time</span>
+            <span class="job-tag">Remote</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+      <div class="job-card" data-dept="finance">
+        <div class="job-info">
+          <h3>Compensation & Benefits Analyst</h3>
+          <div class="job-meta">
+            <span class="job-tag">Finance</span>
+            <span class="job-tag">Full-Time</span>
+            <span class="job-tag">Toronto, CA</span>
+          </div>
+        </div>
+        <a href="#apply" class="btn btn-navy" style="white-space:nowrap;">Apply Now</a>
+      </div>
+
+    </div>
+
+    <!-- APPLY CTA -->
+    <div id="apply" style="background: var(--navy); border-radius: 16px; padding: 3rem; text-align:center; margin-top: 4rem;">
+      <h2 style="font-family:var(--font-display); color:var(--gold); font-size:1.8rem; margin-bottom:0.8rem;">Don't See a Fit?</h2>
+      <p style="color:rgba(255,255,255,0.72); margin-bottom:1.8rem;">Send us your CV and we'll reach out when a suitable role becomes available.</p>
+      <a href="mailto:recruitment@nexacorp.com" class="btn btn-primary">Send Us Your CV</a>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">NexaCorp <em>HR</em></span>
+        <p>Empowering people. Building futures.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="culture.html">Company Culture</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="training.html">Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact HR</h5>
+        <p>📧 hr@nexacorp.com</p>
+        <p>📞 +1 (800) 639-2267</p>
+        <p>🏢 100 Corporate Ave, NY 10001</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NexaCorp. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Employee Handbook</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
